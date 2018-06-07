@@ -64,6 +64,7 @@ view: account_quarter_stats {
 
   derived_table: {
     persist_for: "24 hours"
+    distribution_style: all
     explore_source: master_stats {
       column: _data_quarter {}
       column: external_customer_id {}
@@ -119,6 +120,7 @@ view: campaign_quarter_stats {
 
   derived_table: {
     persist_for: "24 hours"
+    distribution_style: all
     explore_source: master_stats {
       column: _data_quarter {}
       column: campaign_id {}
